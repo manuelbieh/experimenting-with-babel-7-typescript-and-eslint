@@ -16,7 +16,8 @@ Until recently I used `pluggable-babel-eslint` together with `eslint-plugin-type
 - use `babel-eslint` as **ESLint** parser so **ESLint** can understand **Babel** features like Optional Chaining which **TypeScript** does not understand
 - use type definitions as replacement for **PropTypes** in **React** components
 - use **TypeScript** for live type checking in **VSCode** and/or **Atom**, but only for things **TypeScript** does understand. Syntax that is later transpiled via Babel (like Optional Chaining) should ideally just be "ignored" without breaking the linting
-- have all of this working with live linting in **VSCode** and **Atom** using **ESLint**
+- have all of this working with live linting in **VSCode** and **Atom** using **ESLint**.
+- Put in another words: I (more or less) want to use **TypeScript** as a more widely adopted, more performant drop-in replacement for **Flow**.
 
 ## Things that are working:
 
