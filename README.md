@@ -1,6 +1,6 @@
 # Experimenting with Babel 7 + TypeScript + ESLint
 
-The story of a (mostly successful) attempt to get **Babel 7** with **TypeScript** and **ESLint** with `babel-eslint` to work nicely together.
+The story of a (semi successful) attempt to get **Babel 7** with **TypeScript** and **ESLint** with `babel-eslint` to work nicely together.
 
 A little bit of background info: I like to be cutting edge and that's why I like **Babel** a lot. It let's me use future JavaScript today. If there's a proposal for it, there's almost certainly a Babel plugin for it as well. What I also like is typed JavaScript. I used **Flow** a lot in the past but Flow rhymes with slow, and that's what it is: a memory eating, slow, unreliable monster.
 
