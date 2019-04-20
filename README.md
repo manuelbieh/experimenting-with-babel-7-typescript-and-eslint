@@ -50,7 +50,7 @@ Sure you could disable `no-undef` in ESLint since TypeScript also takes care of 
 
 | Issue                                                         | @typescript-eslint/parser | babel-eslint@10.0.1 | babel-eslint@11.0.0-beta.0 |
 | ------------------------------------------------------------- | ------------------------- | ------------------- | -------------------------- |
-| ESLint results in VS Code with non-standard TS syntax         | ❌                        | ✅                  | ✅                         |
+| ESLint results in VS Code with non-standard (Babel) syntax         | ❌                        | ✅                  | ✅                         |
 | TypeScript errors shown in VS Code                            | ✅                        | ✅                  | ✅                         |
 | TypeScript keywords like `Pick` correctly not marked as error | ✅                        | ❌                  | ❌                         |
 | Types and Interfaces not falsely marked as `no-undef`         | ✅                        | ✅                  | ❌                         |
