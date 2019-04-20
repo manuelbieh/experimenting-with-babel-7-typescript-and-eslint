@@ -45,3 +45,12 @@ Until recently I used `pluggable-babel-eslint` together with `eslint-plugin-type
 Sure you could disable `no-undef` in ESLint since TypeScript also takes care of that. **Unless** you're using "unparseable" non-TypeScript syntax like, you know, Optional Chaining 🙄.
 
 ❌ ~~I don't know why, it worked already but it seems like I changed something in the eslintrc (or wherever) so that I now get `XYZ is not defined` when I use a `type XYZ` 😕~~ Ok, got it. Seems like `babel-eslint@11.0.0-beta.0` does not understand TypeScript keywords like `type` or `interface` anymore, not even with `@babel/preset-typescript` in the `.babelrc`.
+
+## Summary
+
+| Issue                                                         | @typescript-eslint/parser | babel-eslint@10.0.1 | babel-eslint@11.0.0-beta.0 |
+| ------------------------------------------------------------- | ------------------------- | ------------------- | -------------------------- |
+| ESLint results in VS Code with non-standard TS syntax         | ❌                        | ✅                  | ✅                         |
+| TypeScript errors shown in VS Code                            | ✅                        | ✅                  | ✅                         |
+| TypeScript keywords like `Pick` correctly not marked as error | ✅                        | ❌                  | ❌                         |
+| Types and Interfaces not falsely marked as `no-undef`         | ✅                        | ✅                  | ❌                         |

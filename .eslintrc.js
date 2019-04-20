@@ -1,5 +1,6 @@
 module.exports = {
   parser: 'babel-eslint',
+  // parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaVersion: 2018,
     ecmaFeatures: {
@@ -28,6 +29,7 @@ module.exports = {
     },
   },
   plugins: ['babel', 'react', 'prettier'],
+  // plugins: ['babel', 'react', 'prettier', '@typescript-eslint/eslint-plugin'],
   rules: {
     eqeqeq: 2,
     indent: [2, 2],
