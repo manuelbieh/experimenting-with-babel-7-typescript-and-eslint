@@ -8,12 +8,6 @@ module.exports = {
     },
     sourceType: 'module',
   },
-  // globals: {
-  //   Pick: true,
-  //   ReturnType: true,
-  //   Record: true,
-  //   // ...,
-  // },
   env: {
     browser: true,
   },
@@ -37,4 +31,15 @@ module.exports = {
     'react/jsx-indent': [2, 2],
     'react/no-unused-prop-types': 2,
   },
+  // You can get rid of the no-undef errors for types and interfaces by using the
+  // following overrides. tsc still fails at non-standard syntax but we can at least
+  // hide all the false positives in ESLint for types and interfaces:
+  // overrides: [
+  //   {
+  //     files: ['*.ts', '*.tsx'],
+  //     rules: {
+  //       'no-undef': 0,
+  //     },
+  //   },
+  // ],
 };
