@@ -48,9 +48,11 @@ Sure you could disable `no-undef` in ESLint since TypeScript also takes care of 
 
 ## Summary
 
-| Issue                                                         | @typescript-eslint/parser | babel-eslint@10.0.1 | babel-eslint@11.0.0-beta.0 |
-| ------------------------------------------------------------- | ------------------------- | ------------------- | -------------------------- |
-| ESLint results with non-standard (Babel) syntax         | ❌ (Parse error)                        | ✅                  | ✅                         |
-| TypeScript errors shown in VS Code                            | ✅                        | ✅                  | ✅                         |
+| Issue                                                                                        | @typescript-eslint/parser | babel-eslint@10.0.1 | babel-eslint@11.0.0-beta.0 |
+| -------------------------------------------------------------------------------------------- | ------------------------- | ------------------- | -------------------------- |
+| ESLint results with non-standard (Babel) syntax                                              | ❌ (Parse error)          | ✅                  | ✅                         |
+| TypeScript errors shown in VS Code                                                           | ✅                        | ✅                  | ✅                         |
 | TypeScript keywords like `Pick` or `ReturnType` correctly **not** marked as `no-undef` error | ✅                        | ❌                  | ❌                         |
-| Types and Interfaces **not** falsely marked as `no-undef`         | ✅                        | ✅                  | ❌                         |
+| Types and Interfaces **not** falsely marked as `no-undef`                                    | ✅                        | ✅                  | ❌                         |
+
+I'd love to see a fully green `babel-eslint@11` column. Not sure if these `'Foo' is not defined` errors in `babel-eslint@11` is regression or if I'm just configuring anything wrong.

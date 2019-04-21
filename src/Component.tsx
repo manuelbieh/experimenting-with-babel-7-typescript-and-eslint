@@ -11,8 +11,6 @@ type MoreProps = {
 
 type Props = SomeProps & MoreProps;
 
-const optional = {};
-
 const ShouldBeNumber: number = 'string';
 
 export const MyComp = (props: Props) => {
@@ -32,6 +30,8 @@ type Bar = Pick<Foo, 'x'>;
 export const FooComp = (props: Bar) => {
   return <div className={props.x} />;
 };
+
+const optional = {};
 
 // This line breaks tsc completely but still works (more or less) fine in VSCode
 // const useless: string = optional?.chaining?.blah;
